@@ -34,7 +34,7 @@ app.get("/users", (req, res) => {
     } else {
       // get data from remote API
       axios
-        .get("https://jsonplaceholder.typicode.com/users")
+        .get("https://mysql-db-sh.mysql.database.azure.com/users")
         .then((res) => res.data)
         .then((users) => {
           // save the API response in redis store
